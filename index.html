@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/png" href="Images/icon.png">
+  <script src="script.js"defer></script>
+  <title>Bankist App</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="message">Log in to get started</span>
+      <img src="Images/logo.png" alt="bankist logo.png">
+      <form class="input">
+        <input  type="text" placeholder="user"class="btn userName"name="user">
+        <input  type="password" maxlength="4" placeholder="PIN" class="btn pin"name="pin">
+        <button class="login_btn" id="logIn">→</button>
+        </form>
+        <button class="sign">Sign-up</button>
+    </nav>
+</header>
+<main class=" hidden">
+  <div class="header">
+    <div class="transaction-header">
+      <h1>Current Balance</h1>
+      <span>As of <date class="now">29/11/2023, 21:36</date></span>
+    </div>
+    <h2 class="balance">0$</h2>
+  </div>
+  <div class="main">
+    <div class="transaction">
+    </div>
+    <div class="actions">
+      <form action=""class="transfer">
+        <h3>Transfer money</h3>
+        <div class="wrap">
+          <input  type="text" class="transfer-to"name="name">
+          <label for="name">Transfer to</label>
+          <input  type="number" class="transfer-amt"name="amount"id="transfer-amt">
+          <label for="transfer-amt">Amount</label>
+          <input type="submit" value="→"id="transfer">
+        </div>
+      </form>
+      <form action="" class="request">
+        <h3>Request loan</h3>
+        <div class="wrap">
+          <input  type="number" name="amount"id="loan-amount">
+          <label for="loan-amount">Amount</label>
+          <input type="submit" value="→" id="request">
+        </div>
+      </form>
+      <form action=""class="close">
+        <h3>Close account</h3>
+        <div class="wrap">
+          <input  type="text" class="close-name"name="name">
+          <label for="name">Confirm user</label>
+          <input type="number" name="amount"id="close-pin">
+          <label for="pin">Confirm PIN</label>
+          <input  type="submit" value="→"class="closee">
+        </div>
+      </form>
+    </div>
+      <div class="summary">
+        <div class="summary-in">
+          IN <span class="in">0000$</span>
+        </div>
+        <div class="summary-out">
+          OUT <span class="out">0000$</span>
+        </div>
+        <div class="summary-int">
+          INTEREST <span class="int">0000$</span>
+        </div>
+        <button class="btn--sort"><span>SORT</span><span>↓</span></button>
+        <div class="log-Timer">
+           <span class="logout-timer">You will be logged out in <span class="timer"></span></span>
+         </div>
+      </div>
+     
+      
+  </div>
+
+</main>
+
+</body>
+</html>

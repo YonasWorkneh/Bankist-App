@@ -1,0 +1,277 @@
+body {
+  color: #444;
+  background-color: #f3f3f3;
+  padding: 0 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+header img {
+  height: 60px;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  font-weight: 600;
+  outline: 0;
+  border-radius: 20px;
+  border: 1px solid #e2e1e1;
+  background: #fff;
+  text-align: center;
+  margin-right: 20px;
+}
+.btn:focus {
+  border-color: #bdb8b8;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 150px;
+}
+.transaction {
+  background: #fff;
+  overflow: scroll;
+  height: 450px;
+}
+.transaction-header span {
+  font-weight: 600;
+  color: #999;
+}
+.login_btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background: none;
+}
+.message {
+  font-size: 1.4rem;
+}
+.sign {
+  background-color: #39b384cb;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: 0.2s;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000042;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+.overlay form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay form fieldset {
+  padding: 50px;
+}
+.overlay form fieldset legend {
+  color: #000;
+  font-size: 2rem;
+}
+.overlay form fieldset div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 10px;
+}
+.overlay form fieldset div input {
+  border-radius: 0;
+  width: initial;
+  height: initial;
+  padding: 10px;
+  text-align: initial;
+}
+.overlay form fieldset .sign-up {
+  width: 100%;
+  background: #00b872d0;
+  padding: 10px 20px;
+  border: none;
+  grid-column: 1 / span 2;
+  cursor: pointer;
+}
+.overlay form fieldset .sign-up:hover {
+  background-color: #00b871;
+}
+
+.sign:hover {
+  background-color: #00b871;
+}
+.main {
+  padding: 20px 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.actions {
+  text-align: right;
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr;
+  height: 450px;
+  gap: 1rem;
+}
+.transfer,
+.request,
+.close {
+  background: linear-gradient(to left top, rgb(255, 176, 3), rgb(255, 203, 3));
+  text-align: left;
+  padding: 10px 20px 70px;
+  border-radius: 10px;
+  position: relative;
+  height: 60px;
+}
+h1,
+h2 {
+  font-size: 1.8rem;
+  margin: 10px 0 10px;
+}
+input {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #333;
+  border: none;
+  width: 100px;
+  margin-right: 10px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+input[type="submit"] {
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+label {
+  margin: 30px 0 30px;
+  font-weight: 600;
+  color: #333;
+}
+label[for="name"] {
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  color: #333;
+}
+label[for="transfer-amt"] {
+  position: absolute;
+  bottom: -20px;
+  left: 160px;
+  color: #333;
+}
+.wrap {
+  display: flex;
+}
+input {
+  outline: 0;
+}
+.request {
+  background: linear-gradient(to top left, #39b385, #9be15d);
+  position: relative;
+}
+.request input[type="number"] {
+  width: 120px;
+}
+label[for="loan-amount"] {
+  position: absolute;
+  left: 60px;
+  bottom: -20px;
+  color: #333;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.close {
+  background: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.close label[for="pin"] {
+  position: absolute;
+  left: 140px;
+  bottom: -20px;
+  color: #333;
+}
+.hidden {
+  visibility: hidden;
+}
+.transaction-detail {
+  padding: 20px 40px;
+  border-bottom: 1px solid #bdb8b87c;
+  display: flex;
+  justify-content: space-between;
+}
+.transaction-type span {
+  border-radius: 50px;
+  padding: 5px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.Deposit {
+  background: linear-gradient(to top left, #39b385, #9be15d);
+}
+.Withdrawal {
+  background: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.transaction-detail .amount {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.transaction-type date {
+  font-weight: 600;
+  color: #666;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  padding-left: 20px;
+}
+.summary {
+  display: flex;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+.summary button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+span.in {
+  font-size: 2.2rem;
+  color: rgb(25, 122, 25);
+  padding: 0 20px 0 5px;
+}
+span.out {
+  font-size: 2.2rem;
+  color: #f5465d;
+  padding: 0 20px 0 5px;
+}
+span.int {
+  font-size: 2.2rem;
+  color: #333;
+  padding: 0 20px 0 5px;
+}
+.btn--sort {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+  font-size: 1rem;
+  gap: 2px;
+  cursor: pointer;
+}
