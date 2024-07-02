@@ -107,7 +107,8 @@ const currencies = new Map([
 ]);
 
 accounts.map((account) => {
-  account.userName = account.owner.toLowerCase();
+  account.userName = account.owner.toLowerCase().split(' ').map((name) => name[0])
+    .join("");
 });
 
 const formatDate = function (date, locale) {
@@ -382,7 +383,7 @@ signUpBtn.addEventListener("click", function () {
           </div>
           <div>
             <label for="password">Password</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" maxlength="4">
           </div>
           <div>
             <label for="ir">Interest rate</label>
