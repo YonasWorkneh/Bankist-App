@@ -4,7 +4,7 @@ Bankist is a simple banking application that allows users to manage their financ
 
 ## Features
 
-1.**Create Account**: Users can create an account by providing the neccessary credentials 
+1. **Create Account**: Users can create an account by providing the neccessary credentials 
 2. **Login**: Users can log in to the app using a username and 4-digit PIN.
 3. **Balance Display**: The current balance is displayed prominently on the main page.
 4. **Transaction History**: Users can view their transaction history, including deposits, withdrawals, and interest.
